@@ -11,10 +11,15 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
 
     private MenuHelper menuHelper;
+    private StickerHelper stickerHelper;
 
 
     public MenuHelper menu() {
         return menuHelper;
+    }
+
+    public StickerHelper sticker() {
+        return stickerHelper;
     }
     WebDriver driver;
     WebDriverWait wait;
@@ -28,6 +33,8 @@ public class ApplicationManager {
         wait = new WebDriverWait(driver, 10);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         menuHelper = new MenuHelper(driver);
+        stickerHelper = new StickerHelper(driver);
+
 
 
         Runtime.getRuntime().addShutdownHook(
