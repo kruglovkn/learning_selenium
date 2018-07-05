@@ -12,7 +12,7 @@ public class HelperBase {
         this.driver = driver;
     }
 
-    public void click(By locator) {
+    public void click (By locator) {
         driver.findElement(locator).click();
     }
     public void type(By locator, String text) {

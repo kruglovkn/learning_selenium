@@ -3,6 +3,9 @@ package ru.stqa.training.selenium.AppManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class MenuHelper extends HelperBase{
     public MenuHelper(WebDriver driver) {
@@ -17,7 +20,21 @@ public class MenuHelper extends HelperBase{
     }
 
     public void menuCheck() {
-        click(By.linkText("Appearence"));
+        List<WebElement> menuFolders = driver.findElements(By.id("app-"));
+        for (WebElement menuFolder: menuFolders) {
+            menuFolder.click();
+            Assert.assertTrue(isElementPresent(By.tagName("h1")));
+            WebElement subMenu = driver.findElement(By.cssSelector("#app-.selected"));
+            List<WebElement> subFolders = subMenu.findElements(By.xpath("//li[contains(@id,'doc-')]"));
+            if (subFolders.size()!=0){
+                for (WebElement subFolder: subFolders) {
+                    subFolder.click();
+                    Assert.assertTrue(isElementPresent(By.tagName("h1")));
+                }
+            }
+            driver.navigate().back();
+        }
+        /*click(By.linkText("Appearence"));
         Assert.assertTrue(isElementPresent(By.xpath("//h1[contains(text(),'Template')]")));
 
         click(By.id("doc-template"));
@@ -192,7 +209,7 @@ public class MenuHelper extends HelperBase{
         Assert.assertTrue(isElementPresent(By.xpath("//h1[contains(text(),'vQmods')]")));
 
         click(By.id("doc-vqmods"));
-        Assert.assertTrue(isElementPresent(By.xpath("//h1[contains(text(),'vQmods')]")));
+        Assert.assertTrue(isElementPresent(By.xpath("//h1[contains(text(),'vQmods')]")));*/
 
     }
 }
