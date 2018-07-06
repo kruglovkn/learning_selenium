@@ -31,7 +31,7 @@ public class ApplicationManager {
         }
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         menuHelper = new MenuHelper(driver);
         stickerHelper = new StickerHelper(driver);
 
