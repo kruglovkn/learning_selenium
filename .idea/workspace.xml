@@ -51,7 +51,7 @@
       <file leaf-file-name="MenuTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MenuTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
+            <state relative-caret-position="68">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
@@ -69,7 +69,7 @@
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="391">
               <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -81,12 +81,12 @@
       <file leaf-file-name="MenuHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="87" />
+            <state relative-caret-position="171">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1674#1682#0" expanded="true" />
-                <element signature="e#2757#2765#0" expanded="true" />
+                <element signature="e#2763#2771#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,7 +95,7 @@
       <file leaf-file-name="CountryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="204">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
@@ -450,9 +450,9 @@
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/StickerHelper.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/HelperBase.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/TimeZoneCheck.java" />
+        <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java" />
       </list>
     </option>
   </component>
@@ -468,6 +468,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -523,8 +525,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -736,27 +736,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CountryTest - 2018.07.07 at 00h 53m 56s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountryTest - 2018.07.07 at 01h 07m 28s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountryTest - 2018.07.07 at 01h 20m 27s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountryTest - 2018.07.07 at 01h 26m 24s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountryTest - 2018.07.07 at 01h 40m 54s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountryTest - 2018.07.07 at 01h 49m 24s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountryTest - 2018.07.07 at 01h 51m 33s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CountryTest - 2018.07.07 at 01h 55m 04s.xml">
       <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
@@ -764,6 +743,27 @@
       <configuration name="TimeZoneCheck" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TimeZoneCheck - 2018.07.07 at 05h 26m 59s.xml">
+      <configuration name="TimeZoneCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountryTest - 2018.07.07 at 15h 29m 15s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountryTest - 2018.07.07 at 15h 31m 21s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountryTest - 2018.07.07 at 15h 32m 50s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TimeZoneCheck - 2018.07.07 at 15h 34m 21s.xml">
+      <configuration name="TimeZoneCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TimeZoneCheck - 2018.07.07 at 15h 35m 50s.xml">
+      <configuration name="TimeZoneCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TimeZoneCheck - 2018.07.07 at 15h 40m 49s.xml">
+      <configuration name="TimeZoneCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TimeZoneCheck - 2018.07.07 at 15h 45m 17s.xml">
       <configuration name="TimeZoneCheck" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -778,7 +778,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
@@ -788,19 +787,19 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32843137" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
       <window_info anchor="right" id="Gradle" order="4" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869282" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -823,18 +822,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java</url>
           <line>64</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -845,6 +838,86 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MyFirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MenuTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/StickerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/TimeZoneCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/StickerHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1674#1682#0" expanded="true" />
+            <element signature="e#2763#2771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -906,7 +979,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1674#1682#0" expanded="true" />
-            <element signature="e#2757#2765#0" expanded="true" />
+            <element signature="e#2763#2771#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -962,7 +1035,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1674#1682#0" expanded="true" />
-            <element signature="e#2757#2765#0" expanded="true" />
+            <element signature="e#2763#2771#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1126,7 +1199,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="391">
           <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1136,7 +1209,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MenuTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
+        <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
@@ -1150,7 +1223,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
@@ -1164,12 +1237,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="87" />
+        <state relative-caret-position="171">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1674#1682#0" expanded="true" />
-            <element signature="e#2757#2765#0" expanded="true" />
+            <element signature="e#2763#2771#0" expanded="true" />
           </folding>
         </state>
       </provider>
