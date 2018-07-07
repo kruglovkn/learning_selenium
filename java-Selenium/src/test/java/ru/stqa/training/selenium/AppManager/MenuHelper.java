@@ -76,4 +76,26 @@ public class MenuHelper extends HelperBase{
         }
     }
 
+    public void checkTimeZoneFromMenu() {
+        click(By.linkText("Geo Zones"));
+        List<WebElement> rows = driver.findElements(By.xpath("//tr[@class = 'row']"));
+        for (int i = 0; i < rows.size(); i++) {
+                rows.get(i).findElement(By.xpath(".//td[5]")).findElement(By.cssSelector("a")).click();
+                WebElement table = driver.findElement(By.cssSelector("#table-zones"));
+                List<String> timeZones = new ArrayList<String>();
+                List<WebElement> timeRows = table.findElements(By.cssSelector("tr"));
+                for (int a = 1; a < timeRows.size()-1; a++) {
+                    String timeZone = timeRows.get(a).findElement(By.xpath(".//td[3]")).
+                            findElement(By.xpath(".//option[@selected = 'selected']")).getText();
+                    timeZones.add(timeZone);
+                }
+                for (int t = 0; t < timeZones.size()-1; t++) {
+                    Assert.assertTrue((timeZones.get(t).compareTo(timeZones.get(t + 1))) < 0);
+                }
+                driver.navigate().back();
+                rows = driver.findElements(By.xpath(".//tr[@class = 'row']"));
+
+        }
+    }
+
 }
