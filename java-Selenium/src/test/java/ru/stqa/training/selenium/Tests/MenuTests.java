@@ -1,9 +1,6 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.Tests;
 
 import org.junit.Test;
-import org.openqa.selenium.By;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 public class MenuTests extends TestBase {
 

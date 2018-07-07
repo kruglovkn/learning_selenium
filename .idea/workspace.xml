@@ -37,7 +37,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MyFirstTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MyFirstTest.java">
+        <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MyFirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
@@ -49,19 +49,16 @@
         </entry>
       </file>
       <file leaf-file-name="MenuTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MenuTests.java">
+        <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MenuTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="37">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="StickerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/StickerTest.java">
+        <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/StickerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
@@ -84,11 +81,21 @@
       <file leaf-file-name="MenuHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+            <state relative-caret-position="136">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1674#1682#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -433,6 +440,7 @@
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/StickerHelper.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/HelperBase.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java" />
       </list>
     </option>
@@ -491,6 +499,15 @@
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
               <item name="AppManager" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-Selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-Selenium" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -520,22 +537,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MenuTests">
+  <component name="RunManager" selected="JUnit.CountryTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-Selenium_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
+          <option name="PATTERN" value="ru.stqa.training.selenium.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.LoginTest" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.Tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Tests.CountryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-Selenium_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.Tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Tests.LoginTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -551,14 +591,14 @@
       <module name="java-Selenium_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
+          <option name="PATTERN" value="ru.stqa.training.selenium.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.MenuTests" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.Tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Tests.MenuTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -574,14 +614,14 @@
       <module name="java-Selenium_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
+          <option name="PATTERN" value="ru.stqa.training.selenium.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.MyFirstTest" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.Tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Tests.MyFirstTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -597,14 +637,14 @@
       <module name="java-Selenium_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
+          <option name="PATTERN" value="ru.stqa.training.selenium.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.StickerTest" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.Tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Tests.StickerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -659,9 +699,11 @@
       <item itemvalue="JUnit.LoginTest" />
       <item itemvalue="JUnit.MenuTests" />
       <item itemvalue="JUnit.StickerTest" />
+      <item itemvalue="JUnit.CountryTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CountryTest" />
         <item itemvalue="JUnit.MenuTests" />
         <item itemvalue="JUnit.StickerTest" />
         <item itemvalue="JUnit.LoginTest" />
@@ -683,35 +725,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuTests - 2018.07.06 at 01h 08m 18s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 00h 47m 18s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 01h 10m 10s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 00h 50m 49s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 01h 26m 28s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 00h 53m 56s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 01h 30m 16s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 01h 07m 28s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 01h 48m 26s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 01h 20m 27s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 02h 23m 13s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 01h 26m 24s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 16h 17m 02s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 01h 40m 54s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 16h 19m 07s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 01h 49m 24s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 16h 20m 31s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 01h 51m 33s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTests - 2018.07.06 at 16h 26m 50s.xml">
-      <configuration name="MenuTests" configurationId="JUnit" />
+    <history-entry file="CountryTest - 2018.07.07 at 01h 55m 04s.xml">
+      <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -724,8 +766,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
@@ -736,7 +777,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32843137" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -747,7 +788,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869282" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -767,11 +808,26 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((ChromeDriver)((RemoteExecuteMethod)((RemoteLocationContext)((ChromeDriver)((RemoteWebElement)rows.get(0)).parent).locationContext).executeMethod).driver).locationContext" custom="org.openqa.selenium.remote.RemoteExecuteMethod,org.openqa.selenium.remote.html5.RemoteLocationContext,org.openqa.selenium.remote.RemoteWebElement,org.openqa.selenium.chrome.ChromeDriver" />
+        <watch expression="((ChromeDriver)((RemoteExecuteMethod)((RemoteLocationContext)((ChromeDriver)((RemoteExecuteMethod)((RemoteLocationContext)((ChromeDriver)((RemoteExecuteMethod)((RemoteLocationContext)((ChromeDriver)((RemoteExecuteMethod)((RemoteLocationContext)((ChromeDriver)((RemoteExecuteMethod)((RemoteLocationContext)((ChromeDriver)((RemoteExecuteMethod)((RemoteLocationContext)((ChromeDriver)((RemoteWebElement)rows.get(0)).parent).locationContext).executeMethod).driver).locationContext).executeMethod).driver).locationContext).executeMethod).driver).locationContext).executeMethod).driver).locationContext).executeMethod).driver).locationContext).executeMethod).driver).locationContext" custom="org.openqa.selenium.remote.RemoteExecuteMethod,org.openqa.selenium.remote.html5.RemoteLocationContext,org.openqa.selenium.remote.RemoteWebElement,org.openqa.selenium.chrome.ChromeDriver" />
+        <watch expression="((RemoteWebElement)rows.get(0)).foundBy" custom="org.openqa.selenium.remote.RemoteWebElement" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MyFirstTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
@@ -781,17 +837,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MenuTests.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MenuTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/StickerTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/StickerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
@@ -834,11 +887,12 @@
           <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1674#1682#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MyFirstTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
@@ -848,7 +902,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/LoginTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
@@ -858,17 +912,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MenuTests.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MenuTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/StickerTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/StickerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
@@ -891,6 +942,7 @@
           <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1674#1682#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -905,7 +957,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
@@ -932,7 +984,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MyFirstTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="58" />
@@ -942,7 +994,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/LoginTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
@@ -960,7 +1012,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/SessionHelper.java" />
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/LoginTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
@@ -970,7 +1022,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
@@ -980,7 +1032,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MyFirstTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
@@ -990,17 +1042,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/MenuTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/StickerTest.java">
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/StickerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
@@ -1072,12 +1114,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/MenuTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.13.0/c4a49cfe5172bb6c6de784abd4c2b21470083815/selenium-api-3.13.0-sources.jar!/org/openqa/selenium/WebDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        <state relative-caret-position="136">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1674#1682#0" expanded="true" />
           </folding>
         </state>
       </provider>

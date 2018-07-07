@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MenuHelper extends HelperBase{
@@ -37,4 +38,21 @@ public class MenuHelper extends HelperBase{
             menuFolders = driver.findElements(By.id("app-"));
         }
     }
+
+    public void countryCheck() {
+        click(By.linkText("Countries"));
+        List<String> countries = new ArrayList<String>();
+        List<WebElement> rows = driver.findElements(By.xpath(".//tr[@class = 'row']"));
+        for (int i=0; i<rows.size(); i++ ) {
+            WebElement cell = rows.get(i).findElement(By.xpath("//td[5]"));
+            WebElement country = cell.findElement(By.cssSelector("a"));
+            String countryName = country.getText();
+            countries.add(countryName);
+        }
+        for (int i=0; i <countries.size(); i++) {
+            Assert.assertTrue((countries.get(i).compareTo(countries.get(i+1)))<0);
+        }
+    }
+
+
 }

@@ -1,8 +1,8 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.Tests;
 
 import org.junit.Test;
 
-public class StickerTest extends TestBase{
+public class StickerTest extends TestBase {
 
     @Test
     public void testStickers() {

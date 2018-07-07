@@ -1,4 +1,4 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.Tests;
 
 import org.junit.After;
 import org.junit.Before;
@@ -10,11 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class MyFirstTest {
-
- private WebDriver driver;
- private WebDriverWait wait;
-
+public class LoginTest {
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     @Before
     public void start() {
@@ -22,11 +20,12 @@ public class MyFirstTest {
         wait = new WebDriverWait(driver, 10);
     }
     @Test
-    public void myFirstTest() {
-        driver.get("https://www.google.com");
-        driver.findElement(By.name("q")).sendKeys("webdriver");
-        driver.findElement(By.className("sbqs_c")).click();
-        wait.until(titleIs("webdriver - Поиск в Google"));
+    public void testLogin() {
+        driver.get("http://localhost/litecart/admin/login.php");
+        driver.findElement(By.name("username")).sendKeys("admin");
+        driver.findElement(By.name("password")).sendKeys("admin");
+        driver.findElement(By.name("login")).click();
+        wait.until(titleIs("My Store"));
     }
 
     @After
