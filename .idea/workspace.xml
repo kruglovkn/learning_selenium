@@ -81,11 +81,12 @@
       <file leaf-file-name="MenuHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="147">
+              <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1674#1682#0" expanded="true" />
+                <element signature="e#2757#2765#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,8 +95,17 @@
       <file leaf-file-name="CountryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="181">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeZoneCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/TimeZoneCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -440,8 +450,9 @@
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/StickerHelper.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/HelperBase.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java" />
         <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java" />
+        <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java" />
+        <option value="$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/TimeZoneCheck.java" />
       </list>
     </option>
   </component>
@@ -537,7 +548,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CountryTest">
+  <component name="RunManager" selected="JUnit.TimeZoneCheck">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -610,29 +621,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MyFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-Selenium_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.Tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Tests.MyFirstTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="StickerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-Selenium_test" />
       <extension name="coverage">
@@ -645,6 +633,29 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.Tests" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Tests.StickerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TimeZoneCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-Selenium_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.Tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Tests.TimeZoneCheck" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -695,19 +706,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.MyFirstTest" />
       <item itemvalue="JUnit.LoginTest" />
       <item itemvalue="JUnit.MenuTests" />
       <item itemvalue="JUnit.StickerTest" />
       <item itemvalue="JUnit.CountryTest" />
+      <item itemvalue="JUnit.TimeZoneCheck" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TimeZoneCheck" />
         <item itemvalue="JUnit.CountryTest" />
         <item itemvalue="JUnit.MenuTests" />
         <item itemvalue="JUnit.StickerTest" />
         <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.MyFirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -725,12 +736,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CountryTest - 2018.07.07 at 00h 47m 18s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountryTest - 2018.07.07 at 00h 50m 49s.xml">
-      <configuration name="CountryTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CountryTest - 2018.07.07 at 00h 53m 56s.xml">
       <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
@@ -755,6 +760,12 @@
     <history-entry file="CountryTest - 2018.07.07 at 01h 55m 04s.xml">
       <configuration name="CountryTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TimeZoneCheck - 2018.07.07 at 05h 24m 54s.xml">
+      <configuration name="TimeZoneCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TimeZoneCheck - 2018.07.07 at 05h 26m 59s.xml">
+      <configuration name="TimeZoneCheck" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -766,7 +777,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
@@ -815,8 +827,14 @@
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -888,6 +906,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1674#1682#0" expanded="true" />
+            <element signature="e#2757#2765#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -943,6 +962,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1674#1682#0" expanded="true" />
+            <element signature="e#2757#2765#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1121,13 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.13.0/c4a49cfe5172bb6c6de784abd4c2b21470083815/selenium-api-3.13.0-sources.jar!/org/openqa/selenium/WebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1135,13 +1148,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/CountryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/Tests/TimeZoneCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java-Selenium/src/test/java/ru/stqa/training/selenium/AppManager/MenuHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="147">
+          <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1674#1682#0" expanded="true" />
+            <element signature="e#2757#2765#0" expanded="true" />
           </folding>
         </state>
       </provider>
