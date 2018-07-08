@@ -40,7 +40,7 @@ public class MenuHelper extends HelperBase{
     }
 
     public void countryCheck() {
-        click(By.linkText("Countries"));
+        driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         List<String> countries = new ArrayList<String>();
         List<WebElement> rows = driver.findElements(By.xpath("//tr[@class = 'row']"));
         for (int i=0; i<rows.size(); i++ ) {
@@ -55,7 +55,7 @@ public class MenuHelper extends HelperBase{
     }
 
     public void checkTimeZone() {
-        click(By.linkText("Countries"));
+        driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         List<WebElement> rows = driver.findElements(By.xpath("//tr[@class = 'row']"));
         for (int i = 0; i < rows.size(); i++) {
             if (!(rows.get(i).findElement(By.xpath(".//td[6]")).getText()).equals("0")) {
@@ -77,7 +77,7 @@ public class MenuHelper extends HelperBase{
     }
 
     public void checkTimeZoneFromMenu() {
-        click(By.linkText("Geo Zones"));
+        driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
         List<WebElement> rows = driver.findElements(By.xpath("//tr[@class = 'row']"));
         for (int i = 0; i < rows.size(); i++) {
                 rows.get(i).findElement(By.xpath(".//td[5]")).findElement(By.cssSelector("a")).click();
