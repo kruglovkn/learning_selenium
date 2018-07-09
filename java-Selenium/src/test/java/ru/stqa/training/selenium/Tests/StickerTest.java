@@ -6,8 +6,8 @@ public class StickerTest extends TestBase {
 
     @Test
     public void testStickers() {
-        app.sticker().enter();
-        app.sticker().checkStickers();
+        app.litecart().enter();
+        app.litecart().checkStickers();
 
     }
 }

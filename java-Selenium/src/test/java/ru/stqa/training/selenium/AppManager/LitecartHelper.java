@@ -5,15 +5,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.Select;
 
+import java.util.Calendar;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class StickerHelper extends HelperBase{
+public class LitecartHelper extends HelperBase{
 
-    public StickerHelper(WebDriver driver) {
+    public LitecartHelper(WebDriver driver) {
         super(driver);
     }
 
@@ -24,7 +26,7 @@ public class StickerHelper extends HelperBase{
     public void checkStickers() {
         List<WebElement> items = driver.findElements(By.cssSelector("li.product.column.shadow.hover-light"));
         for (WebElement item : items)
-            assertTrue(item.findElements(By.xpath(".//div[contains(@class,'sticker')]")).size()==1);
+            assertTrue(item.findElements(By.xpath(".//div[contains(@class,'litecart')]")).size()==1);
     }
 
 
@@ -66,5 +68,41 @@ public class StickerHelper extends HelperBase{
         assertTrue(textMainPage.equals(textProductPage));
         assertTrue(priceMainPageOld.equals(priceProductPageOld));
         assertTrue(priceMainPageNew.equals(priceProductPageNew));
+    }
+
+    public void createAcc(String taxId, String company, String name, String lastname,
+                          String address, String postcode, String city, String state,
+                          String email, String phone, String password) {
+        driver.get("http://localhost/litecart/en/create_account");
+        type(By.cssSelector("[name = tax_id]"), taxId);
+        type(By.cssSelector("[name = company]"), company);
+        type(By.cssSelector("[name = firstname]"), name);
+        type(By.cssSelector("[name = lastname]"), lastname);
+        type(By.cssSelector("[name = address1]"), address);
+        type(By.cssSelector("[name = postcode]"), postcode);
+        type(By.cssSelector("[name = city]"), city);
+        //Select selectCountry = new Select(driver.findElement(By.cssSelector(".select2-selection.select2-selection--single")));
+        //selectCountry.selectByVisibleText(country);
+        Select selectState = new Select(driver.findElement(By.cssSelector("select[name = zone_code]")));
+        selectState.selectByVisibleText(state);
+        type(By.cssSelector("[name = email]"), email);
+        type(By.cssSelector("[name = phone]"), phone);
+        type(By.cssSelector("[name = password]"), password);
+        type(By.cssSelector("[name = confirmed_password]"), password);
+        click(By.cssSelector("button[type = submit]"));
+    }
+
+
+    public void exit() {
+        click(By.linkText("Logout"));
+
+    }
+
+    public void loginToLitecart(String email, String password) {
+        enter();
+        type(By.cssSelector("[name = email]"), email);
+        type(By.cssSelector("[name = password]"), password);
+        click(By.cssSelector("button[name = login]"));
+
     }
 }

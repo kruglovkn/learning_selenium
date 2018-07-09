@@ -6,13 +6,13 @@ public class TimeZoneTest extends TestBase {
 
     @Test
     public void testTimeZones() {
-        app.menu().login();
-        app.menu().checkTimeZone();
+        app.admin().login();
+        app.admin().checkTimeZone();
     }
 
     @Test
     public void testTimeZonesFromMenu() {
-        app.menu().login();
-        app.menu().checkTimeZoneFromMenu();
+        app.admin().login();
+        app.admin().checkTimeZoneFromMenu();
     }
 }

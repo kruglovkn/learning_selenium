@@ -6,8 +6,8 @@ public class MenuTests extends TestBase {
 
     @Test
     public void testMenu() {
-        app.menu().login();
-        app.menu().menuCheck();
+        app.admin().login();
+        app.admin().menuCheck();
 
 
     }

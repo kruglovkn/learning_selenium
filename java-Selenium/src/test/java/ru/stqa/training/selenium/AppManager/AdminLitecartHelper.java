@@ -4,12 +4,17 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MenuHelper extends HelperBase{
-    public MenuHelper(WebDriver driver) {
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
+
+public class AdminLitecartHelper extends HelperBase{
+    public AdminLitecartHelper(WebDriver driver) {
         super(driver);
     }
 
@@ -97,5 +102,42 @@ public class MenuHelper extends HelperBase{
 
         }
     }
+
+    public void createProduct(String productName, String productCode,String quantity, String status, String dataFrom,
+                              String dataTo, String madeBy, String shortDescription, String text, String purchasePrice,
+                              String currencyType,String price, String priceEUR, File photo) {
+        driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog");
+        click(By.xpath("//a[contains(@href,'edit_product')]"));
+        WebElement statusField = driver.findElement(By.cssSelector("label"));
+        statusField.findElement(By.cssSelector("input[value = '1']")).click();
+        type(By.cssSelector("[name = 'name[en]']"), productName);
+        type(By.cssSelector("[name = code]"), productCode);
+        click(By.cssSelector("input[value = '1-3']"));
+        type(By.cssSelector("input[name = quantity]"), quantity);
+        Select sold = new Select(driver.findElement(By.cssSelector("[name = sold_out_status_id]")));
+        sold.selectByVisibleText(status);
+        attach(By.cssSelector("input[name = 'new_images[]']"), photo);
+        driver.findElement(By.cssSelector("[name = date_valid_from]")).sendKeys(dataFrom);
+        driver.findElement(By.cssSelector("[name = date_valid_to]")).sendKeys(dataTo);
+        click(By.cssSelector("[href = '#tab-information']"));
+        Select manufacturer = new Select(driver.findElement(By.cssSelector("[name = manufacturer_id]")));
+        manufacturer.selectByVisibleText(madeBy);
+        type(By.cssSelector("[name = keywords]"), productName);
+        type(By.cssSelector("[name = 'short_description[en]']"), shortDescription);
+        type(By.cssSelector(".trumbowyg-editor"),text);
+        type(By.cssSelector("[name = 'head_title[en]']"), productName);
+        type(By.cssSelector("[name = 'meta_description[en]']"), shortDescription);
+        click(By.cssSelector("[href = '#tab-prices']"));
+        type(By.cssSelector("[name = purchase_price]"),purchasePrice);
+        Select currancy = new Select(driver.findElement(By.cssSelector("[name = purchase_price_currency_code]")));
+        currancy.selectByVisibleText(currencyType);
+        driver.findElement(By.cssSelector("[name = 'prices[USD]']")).sendKeys(price);
+        driver.findElement(By.cssSelector("[name = 'prices[EUR]']")).sendKeys(priceEUR);
+        click(By.cssSelector("button[name = save]"));
+
+        Assert.assertTrue(isElementPresent(By.linkText(productName)));
+    }
+
+
 
 }

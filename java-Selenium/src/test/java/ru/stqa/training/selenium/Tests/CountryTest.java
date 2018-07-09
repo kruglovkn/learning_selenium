@@ -6,8 +6,8 @@ public class CountryTest extends TestBase {
 
     @Test
     public void testCountries() {
-        app.menu().login();
-        app.menu().countryCheck();
+        app.admin().login();
+        app.admin().countryCheck();
     }
 
 
