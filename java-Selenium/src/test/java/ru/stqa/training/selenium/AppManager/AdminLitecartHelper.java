@@ -14,8 +14,8 @@ import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class AdminLitecartHelper extends HelperBase{
-    public AdminLitecartHelper(WebDriver driver) {
-        super(driver);
+    public AdminLitecartHelper(WebDriver driver,WebDriverWait wait) {
+        super(driver,wait);
     }
 
     public void login() {

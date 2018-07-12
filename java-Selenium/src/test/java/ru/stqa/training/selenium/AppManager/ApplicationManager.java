@@ -32,9 +32,9 @@ public class ApplicationManager {
        // driver = new FirefoxDriver(options);
         //driver = new EdgeDriver();
         wait = new WebDriverWait(driver, 10);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        adminLitecartHelper = new AdminLitecartHelper(driver);
-        litecartHelper = new LitecartHelper(driver);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        adminLitecartHelper = new AdminLitecartHelper(driver,wait);
+        litecartHelper = new LitecartHelper(driver,wait);
 
 
 

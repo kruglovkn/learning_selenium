@@ -3,15 +3,18 @@ package ru.stqa.training.selenium.AppManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 
 public class HelperBase {
 
     protected WebDriver driver;
+    protected WebDriverWait wait;
 
-    public HelperBase(WebDriver driver) {
+    public HelperBase(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
+        this.wait = wait;
     }
 
     public void click (By locator) {
