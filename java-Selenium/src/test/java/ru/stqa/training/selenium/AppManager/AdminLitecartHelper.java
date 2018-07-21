@@ -4,13 +4,18 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
+import static org.junit.Assert.assertTrue;
+import static org.openqa.selenium.support.ui.ExpectedConditions.numberOfWindowsToBe;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class AdminLitecartHelper extends HelperBase{
@@ -29,13 +34,13 @@ public class AdminLitecartHelper extends HelperBase{
         List<WebElement> menuFolders = driver.findElements(By.id("app-"));
         for (int a = 0; a < menuFolders.size(); a++) {
             menuFolders.get(a).click();
-            Assert.assertTrue(isElementPresent(By.tagName("h1")));
+            assertTrue(isElementPresent(By.tagName("h1")));
             WebElement subMenu = driver.findElement(By.cssSelector("#app-.selected"));
             List<WebElement> subFolders = subMenu.findElements(By.xpath("//li[contains(@id,'doc-')]"));
             if (subFolders.size()!=0){
                 for (int i = 0; i < subFolders.size(); i++) {
                     subFolders.get(i).click();
-                    Assert.assertTrue(isElementPresent(By.tagName("h1")));
+                    assertTrue(isElementPresent(By.tagName("h1")));
                     WebElement newSubMenu= driver.findElement(By.cssSelector("#app-.selected"));
                     subFolders = newSubMenu.findElements(By.xpath("//li[contains(@id,'doc-')]"));
                 }
@@ -55,7 +60,7 @@ public class AdminLitecartHelper extends HelperBase{
             countries.add(countryName);
         }
         for (int i=0; i <countries.size()-1; i++) {
-            Assert.assertTrue((countries.get(i).compareTo(countries.get(i+1)))<0);
+            assertTrue((countries.get(i).compareTo(countries.get(i+1)))<0);
         }
     }
 
@@ -73,7 +78,7 @@ public class AdminLitecartHelper extends HelperBase{
                     timeZones.add(timeZone);
                 }
                 for (int t = 0; t < timeZones.size()-1; t++) {
-                    Assert.assertTrue((timeZones.get(t).compareTo(timeZones.get(t + 1))) < 0);
+                    assertTrue((timeZones.get(t).compareTo(timeZones.get(t + 1))) < 0);
                 }
                 driver.navigate().back();
                 rows = driver.findElements(By.xpath(".//tr[@class = 'row']"));
@@ -95,7 +100,7 @@ public class AdminLitecartHelper extends HelperBase{
                     timeZones.add(timeZone);
                 }
                 for (int t = 0; t < timeZones.size()-1; t++) {
-                    Assert.assertTrue((timeZones.get(t).compareTo(timeZones.get(t + 1))) < 0);
+                    assertTrue((timeZones.get(t).compareTo(timeZones.get(t + 1))) < 0);
                 }
                 driver.navigate().back();
                 rows = driver.findElements(By.xpath(".//tr[@class = 'row']"));
@@ -135,9 +140,46 @@ public class AdminLitecartHelper extends HelperBase{
         driver.findElement(By.cssSelector("[name = 'prices[EUR]']")).sendKeys(priceEUR);
         click(By.cssSelector("button[name = save]"));
 
-        Assert.assertTrue(isElementPresent(By.linkText(productName)));
+        assertTrue(isElementPresent(By.linkText(productName)));
     }
 
+    public void openNewWindow() {
+        driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
+        driver.findElements(By.cssSelector("[class = 'fa fa-pencil']")).iterator().next().click();
+        List<WebElement> links = driver.findElements(By.cssSelector("[class = 'fa fa-external-link']"));
+        for (int i = 0; i<links.size(); i++) {
+            String mainWindow = driver.getWindowHandle();
+            Set<String> oldWindows = driver.getWindowHandles();
+            links.get(i).click();
+            String newWindow = wait.until(thereIsWindowOtherThan(oldWindows));
+            driver.switchTo().window(newWindow);
+            driver.close();
+            driver.switchTo().window(mainWindow);
+            links = driver.findElements(By.cssSelector("[class = 'fa fa-external-link']"));
+        }
+    }
 
+    private ExpectedCondition<String> thereIsWindowOtherThan(Set<String> oldWindows) {
+        return input -> {
+            Set<String> handles = input.getWindowHandles();
+            handles.removeAll(oldWindows);
+            return handles.size() > 0 ? handles.iterator().next() : null;
+        };
+    }
+
+    public void getLogsForProducts() {
+        driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog&category_id=1)");
+        List<WebElement> products = driver
+                .findElements(By.xpath("//tr[@class = 'row']/td[3]/a[contains(@href,'product&category')]"));
+        for (int i = 0; i<products.size(); i++) {
+            products.get(i).click();
+            List<LogEntry> logs = driver.manage().logs().get("browser").getAll();
+            assertTrue(logs.size()==0);
+            //driver.manage().logs().get("browser").forEach(l -> System.out.println(l));
+            driver.navigate().back();
+            products = driver
+                    .findElements(By.xpath("//tr[@class = 'row']/td[3]/a[contains(@href,'product&category')]"));
+        }
+    }
 
 }

@@ -3,6 +3,8 @@ package ru.stqa.training.selenium.AppManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.stqa.training.selenium.ShoppingCart.AddProductToCart;
+import ru.stqa.training.selenium.ShoppingCart.DeleteProductFromCart;
 
 import java.util.concurrent.TimeUnit;
 
@@ -10,6 +12,8 @@ public class ApplicationManager {
 
     private AdminLitecartHelper adminLitecartHelper;
     private LitecartHelper litecartHelper;
+    private DeleteProductFromCart deleteFromCart;
+    private AddProductToCart addToCart;
 
 
     public AdminLitecartHelper admin() {
@@ -21,6 +25,9 @@ public class ApplicationManager {
     }
     WebDriver driver;
     WebDriverWait wait;
+
+    public DeleteProductFromCart deleteProduct() {return deleteFromCart;}
+    public AddProductToCart addProduct() {return addToCart;}
 
 
     public void init() {
@@ -35,6 +42,8 @@ public class ApplicationManager {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         adminLitecartHelper = new AdminLitecartHelper(driver,wait);
         litecartHelper = new LitecartHelper(driver,wait);
+        deleteFromCart = new DeleteProductFromCart(driver,wait);
+        addToCart = new AddProductToCart(driver,wait);
 
 
 

@@ -108,36 +108,5 @@ public class LitecartHelper extends HelperBase{
         type(By.cssSelector("[name = email]"), email);
         type(By.cssSelector("[name = password]"), password);
         click(By.cssSelector("button[name = login]"));
-
-    }
-
-    public void eddProduct(int i) {
-        int n = 1;
-        while (n <= i ) {
-            List<WebElement> products = driver.findElements(By.cssSelector("li.product.column.shadow.hover-light"));
-            products.iterator().next().click();
-            if (isElementPresent(By.cssSelector("[name = 'options[Size]']"))) {
-                Select selectSize = new Select(driver.findElement(By.cssSelector("[name = 'options[Size]']")));
-                selectSize.selectByValue("Medium");
-            }
-            click(By.cssSelector("[name = add_cart_product]"));
-            wait.until(textToBePresentInElement(driver.findElement(By.cssSelector("span.quantity")), String.valueOf(n)));
-            click(By.cssSelector("#logotype-wrapper"));
-            n++;
-        }
-    }
-
-    public void deleteProducts() {
-        click(By.cssSelector("#cart"));
-        List<WebElement> products = driver.findElements(By.cssSelector("li.shortcut"));
-        for (int a = 0; a < products.size(); a++) {
-            List<WebElement> tableRows = driver.
-                    findElements(By.xpath("//table[@class = 'dataTable rounded-corners']//tr"));
-            click(By.cssSelector("[name = remove_cart_item]"));
-            if (a < (products.size() - 1)) {
-                wait.until(numberOfElementsToBe(By.xpath("//table[@class = 'dataTable rounded-corners']//tr"),
-                        (tableRows.size() - 1)));
-            } else {wait.until(presenceOfElementLocated(By.cssSelector("em")));}
-        }
     }
 }

@@ -7,7 +7,7 @@ public class ShoppingCartTest extends TestBase {
     @Test
     public void testShoppingCart() {
         app.litecart().enter();
-        app.litecart().eddProduct(3);
-        app.litecart().deleteProducts();
+        app.addProduct().addProduct(3);
+        app.deleteProduct().deleteProducts();
     }
 }
